@@ -1,0 +1,166 @@
+{
+  "app": {
+    "title": "Social Support Application",
+    "description": "Apply for government financial assistance"
+  },
+  "navigation": {
+    "steps": [
+      "Personal Information",
+      "Family & Financial Info",
+      "Situation Descriptions"
+    ]
+  },
+  "labels": {
+    "language": "Language"
+  },
+  "form": {
+    "personalInfo": {
+      "title": "Personal Information",
+      "name": "Full Name",
+      "nationalId": "National ID",
+      "dateOfBirth": "Date of Birth",
+      "gender": "Gender",
+      "address": "Address",
+      "city": "City",
+      "state": "State",
+      "country": "Country",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "genders": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      }
+    },
+    "familyFinancial": {
+      "title": "Family & Financial Information",
+      "maritalStatus": "Marital Status",
+      "dependents": "Number of Dependents",
+      "employmentStatus": "Employment Status",
+      "monthlyIncome": "Monthly Income (AED)",
+      "housingStatus": "Housing Status",
+      "maritalStatuses": {
+        "single": "Single",
+        "married": "Married",
+        "divorced": "Divorced",
+        "widowed": "Widowed"
+      },
+      "employmentStatuses": {
+        "employed": "Employed",
+        "unemployed": "Unemployed",
+        "student": "Student",
+        "retired": "Retired"
+      },
+      "housingStatuses": {
+        "own": "Own",
+        "rent": "Rent",
+        "livingWithFamily": "Living with family",
+        "homeless": "Homeless"
+      }
+    },
+    "situations": {
+      "title": "Situation Descriptions",
+      "financialSituation": "Current Financial Situation",
+      "employmentCircumstances": "Employment Circumstances",
+      "reasonForApplying": "Reason for Applying",
+      "placeholders": {
+        "financialSituation": "Describe your current financial situation...",
+        "employmentCircumstances": "Describe your employment circumstances...",
+        "reasonForApplying": "Explain why you are applying for support..."
+      }
+    },
+    "validation": {
+      "required": "This field is required",
+      "email": "Please enter a valid email address",
+      "minLength": "Minimum {{min}} characters required",
+      "maxLength": "Maximum {{max}} characters allowed",
+      "onlyLetters": "Only letters and spaces are allowed",
+      "minimumAge": "You must be at least {{min}} years old",
+      "maximumAge": "Maximum age allowed is {{max}} years",
+      "invalidNationalId": "Please enter a valid National ID (15 digits)",
+      "invalidPhoneChars": "Phone number can only contain numbers, spaces, +, -, ( )",
+      "phoneMinLength": "Must contain at least 7 digits (spaces and symbols don't count)",
+      "phoneMaxLength": "Cannot exceed 12 digits (spaces and symbols don't count)",
+      "positiveNumber": "Please enter a positive number",
+      "numbersOnly": "Please enter numbers only",
+      "maxDependents": "Maximum {{max}} dependents allowed",
+      "futureDate": "Date cannot be in the future",
+      "pleaseFillRequired": "Please fill in all required fields correctly"
+    }
+  },
+  "buttons": {
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit",
+    "save": "Save Progress",
+    "helpMeWrite": "Help Me Write",
+    "accept": "Accept",
+    "edit": "Edit",
+    "discard": "Discard",
+    "close": "Close"
+  },
+  "ai": {
+    "generating": "Generating AI suggestion...",
+    "dialogTitle": "AI Writing Assistant",
+    "dialogDescription": "Review and edit the AI-generated suggestion below:",
+    "editLabel": "Edit Suggestion",
+    "editPlaceholder": "Edit the AI-generated text...",
+    "systemPrompt": "You are writing a government support application on behalf of someone in need. Write in first person as if you are the applicant. Provide only the description text, no advice or explanations.",
+    "prompts": {
+      "financialSituation": "Write a first-person description of my current financial situation for a government support application. My situation: {{currentValue}}. Write as if I am the applicant describing my own financial circumstances.",
+      "employmentCircumstances": "Write a first-person description of my employment circumstances for a government support application. My situation: {{currentValue}}. Write as if I am the applicant describing my own work situation.",
+      "reasonForApplying": "Write a first-person explanation of why I am applying for government support. My situation: {{currentValue}}. Write as if I am the applicant explaining my own need for assistance.",
+      "defaults": {
+        "financialSituation": "experiencing financial difficulties with meeting basic expenses",
+        "employmentCircumstances": "currently unemployed and actively seeking employment",
+        "reasonForApplying": "need financial assistance to support my family during this difficult time"
+      }
+    },
+
+    "errors": {
+      "general": "AI service is temporarily unavailable. Please try again later.",
+      "unauthorized": "AI service authentication failed. Please contact support.",
+      "forbidden": "Access to AI service is forbidden. Please check your subscription or contact support.",
+      "rateLimited": "Too many AI requests. Please wait a moment and try again.",
+      "badRequest": "Invalid request to AI service. Please try again.",
+      "serverError": "AI service is experiencing issues. Please try again later.",
+      "timeout": "AI request timed out. Please check your connection and try again.",
+      "networkError": "Network connection failed. Please check your internet and try again.",
+      "requestFailed": "Failed to send request to AI service."
+    },
+    "success": {
+      "generated": "AI suggestion generated successfully!"
+    }
+  },
+  "messages": {
+    "success": "Application submitted successfully!",
+    "saved": "Progress saved successfully!",
+    "error": "An error occurred. Please try again.",
+    "loadingProgress": "Loading saved progress...",
+    "sending": "Sending...",
+    "languageChanged": "Language changed successfully!"
+  },
+  "accessibility": {
+    "stepOf": "Step {{current}} of {{total}}",
+    "required": "Required field",
+    "optional": "Optional field"
+  },
+  "success": {
+    "title": "Application Submitted!",
+    "description": "Thank you! Your application has been successfully submitted. Our team will review it and contact you within 5-7 business days.",
+    "newApplication": "Start New Application"
+  },
+  "errors": {
+    "languageChangeFailed": "Failed to change language. Please try again.",
+    "boundary": {
+      "title": "Something went wrong",
+      "description": "We're sorry, but something unexpected happened. Please refresh the page to try again.",
+      "refreshButton": "Refresh Page"
+    },
+    "notFound": {
+      "title": "Page Not Found",
+      "description": "The page you're looking for doesn't exist.",
+      "goHome": "Go Home"
+    }
+  }
+}
